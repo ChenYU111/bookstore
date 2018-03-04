@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<span style="font-size: 18px;">
+	<!-- bootstrap table --> <script type="text/javascript"
+		src="${pageContext.request.contextPath}/res/jquery-1.10.2/jquery.js"></script>
+	<!-- bootstrap -->
+	<link rel="stylesheet" type="text/css"
+		href="${pageContext.request.contextPath}/res/bootstrap/css/bootstrap.css" />
+	<script type="text/javascript"
+		src="${pageContext.request.contextPath}/res/bootstrap/js/bootstrap.js"></script>
+	<link rel="stylesheet" type="text/css"
+		href="${pageContext.request.contextPath}/res/bootstrap-table/bootstrap-table.css" />
+	<script type="text/javascript"
+		src="${pageContext.request.contextPath}/res/bootstrap-table/bootstrap-table.js"></script>
+	<!-- bootstrap table中文包 --> <script type="text/javascript"
+		src="${pageContext.request.contextPath}/res/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
+</span>
+<title>UserInfo</title>
+
+</head>
+<body>
+	<table id="userListTable">
+		<tr><th>用户名</th><td th:text="${userEntity.uname}">无</td></tr>
+		<tr><th>账号</th><td th:text="${userEntity.userName}">无</td></tr>
+		<tr><th>状态</th><td th:text="${userEntity.status}">无</td></tr>
+	</table>
+</body>
+</html>
