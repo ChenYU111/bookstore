@@ -20,7 +20,7 @@ public class loginController {
 	UserService userService;
 	@Autowired
 	UserEntity userEntity;
-
+      
 	/*@RequestMapping("/login")
 	public String login(HttpServletRequest req) {
 		String result = "";

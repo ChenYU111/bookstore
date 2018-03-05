@@ -15,7 +15,7 @@ import com.wilmar.bookstores.service.UserService;
 @Controller
 @RequestMapping("/user")
 public class UserController {
-	@Autowired
+	@Autowired       
 	UserService userService;
 	@Autowired
 	UserEntity userEntity;
